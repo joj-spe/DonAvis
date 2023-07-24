@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UsersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/auth', function () {
-    return view('template.blade.php');
-});
+Route::get('/', function () {
+    return view('welcome');
+})->name('welcome');
+
+Route::get('/font', function () {
+    return view('font');
+})->name('font');
+//Route::view("auth", "template")->name('template');
