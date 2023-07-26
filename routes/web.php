@@ -21,4 +21,7 @@ Route::get('/', function () {
 Route::get('/font', function () {
     return view('font');
 })->name('font');
-//Route::view("auth", "template")->name('template');
+
+Route::get('home', function () {
+    return view('home');
+})->name('home');

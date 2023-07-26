@@ -12,8 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('notes', function (Blueprint $table) {
-            $table->id_note();
-            $table->int('nbr_note');
+            $table->id();
+            $table->integer('nbr_note');
             $table->float('pourcent_note');
             $table->date('date_note');
             $table->timestamps();
