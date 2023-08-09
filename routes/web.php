@@ -37,3 +37,7 @@ Route::get('register', function () {
 Route::get('/home', function () {
     return view('welcome');
 })->name('home')->middleware(['verified', 'auth']);
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
