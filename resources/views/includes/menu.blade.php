@@ -17,6 +17,15 @@
                         <a href="{{route('welcome')}}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Administrateur</span></a>
                     </li>
 
+                    <li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project" class="nav-item active">
+                        <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            <span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Se Déconnecter</span>
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                        @csrf
+                        </form>
+                    </li>
+
                 </ul>
             </div>
         </div>

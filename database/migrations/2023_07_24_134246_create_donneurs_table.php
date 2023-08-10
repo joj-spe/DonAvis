@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('donneurs', function (Blueprint $table) {
-            $table->id_user();
+            $table->bigInteger('user_id');
             $table->date('date_don');
             $table->timestamps();
         });

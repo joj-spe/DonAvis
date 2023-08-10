@@ -12,9 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('commentaires', function (Blueprint $table) {
-            $table->id_comment();
+            $table->id();
             $table->date('date_comment');
-            $table->int('nbr_comment');
+            $table->integer('nbr_comment');
             $table->timestamps();
         });
     }
