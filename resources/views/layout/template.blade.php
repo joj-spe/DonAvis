@@ -9,7 +9,7 @@
 	<meta name="author" content="">
 
 	<link href="images/header/fav.png" rel="shortcut icon" type="image/x-icon" />
-	<title> @yied('contenu') </title>
+	<title> @yied('title') </title>
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
