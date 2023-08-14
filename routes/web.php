@@ -14,22 +14,21 @@ use App\Http\Controllers\UsersController;
 |
 */
 
+
 Route::get('/welcome', function () {
-    return view('includes.main');
+    return view('welcome');
 })->name('welcome');
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('acceuil')->middleware(['verified', 'auth']);
 
-Route::get('login', function () {
-    return view('auth.login');
-})->name('login');
+//Travailler ici , ça veut dire qu'on doit acceder à ces paes si et seulement si on se connecte
+Route::middleware(['auth'])->group(function () {
 
-Route::get('register', function () {
-    return view('auth.register');
-})->name('register');
+    Route::get('/', function () {  return view('welcome');  })
+    ->name('home');
 
-Route::get('/home', function () {
-    return view('welcome');
-})->name('home')->middleware(['verified', 'auth']);
+    /*Route::prefix('admin')->group(function () {
+
+    });*/
+
+});
+
