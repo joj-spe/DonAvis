@@ -1,3 +1,3 @@
-@extends('dashboard')
+@extends('template')
 @section('content')
 

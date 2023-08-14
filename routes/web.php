@@ -15,12 +15,8 @@ use App\Http\Controllers\UsersController;
 */
 
 Route::get('/welcome', function () {
-    return view('welcome');
+    return view('includes.main');
 })->name('welcome');
-
-Route::get('/font', function () {
-    return view('font');
-})->name('font');
 
 Route::get('/', function () {
     return view('welcome');
@@ -37,7 +33,3 @@ Route::get('register', function () {
 Route::get('/home', function () {
     return view('welcome');
 })->name('home')->middleware(['verified', 'auth']);
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');

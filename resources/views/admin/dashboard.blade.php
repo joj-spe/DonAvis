@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from demos.creative-tim.com/soft-ui-dashboard-pro/pages/dashboards/default.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 04 Aug 2023 06:26:55 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
     <title>
-        Soft UI Dashboard PRO by Creative Tim
+        DonAvis
     </title>
 
 
@@ -117,7 +116,7 @@
             <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
             <a class="navbar-brand m-0" href="default.html" target="_blank">
                 <img src="../../assets/img/logo-ct-dark.png" class="navbar-brand-img h-100" alt="main_logo">
-                <span class="ms-1 font-weight-bold">Soft UI Dashboard PRO</span>
+                <span class="ms-1 font-weight-bold">DonAvis</span>
             </a>
         </div>
         <hr class="horizontal dark mt-0">
@@ -155,34 +154,6 @@
                                     <span class="sidenav-mini-icon"> A </span>
                                     <span class="sidenav-normal"> Automotive </span>
                                 </a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link " href="smart-home.html">
-                                    <span class="sidenav-mini-icon"> S </span>
-                                    <span class="sidenav-normal"> Smart Home </span>
-                                </a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link " data-bs-toggle="collapse" aria-expanded="false" href="#vrExamples">
-                                    <span class="sidenav-mini-icon"> V </span>
-                                    <span class="sidenav-normal"> Virtual Reality <b class="caret"></b></span>
-                                </a>
-                                <div class="collapse " id="vrExamples">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link " href="vr/vr-default.html">
-                                                <span class="sidenav-mini-icon text-xs"> V </span>
-                                                <span class="sidenav-normal"> VR Default </span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link " href="vr/vr-info.html">
-                                                <span class="sidenav-mini-icon text-xs"> V </span>
-                                                <span class="sidenav-normal"> VR Info </span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link " href="crm.html">
@@ -231,12 +202,6 @@
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link " href="../pages/profile/teams.html">
-                                                    <span class="sidenav-mini-icon text-xs"> T </span>
-                                                    <span class="sidenav-normal"> Teams </span>
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
                                                 <a class="nav-link " href="../pages/profile/projects.html">
                                                     <span class="sidenav-mini-icon text-xs"> A </span>
                                                     <span class="sidenav-normal"> All Projects </span>
@@ -258,12 +223,6 @@
                                                     <span class="sidenav-normal"> Reports </span>
                                                 </a>
                                             </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link " href="../pages/users/new-user.html">
-                                                    <span class="sidenav-mini-icon text-xs"> N </span>
-                                                    <span class="sidenav-normal"> New User </span>
-                                                </a>
-                                            </li>
                                         </ul>
                                     </div>
                                 </li>
@@ -278,12 +237,6 @@
                                                 <a class="nav-link " href="../pages/account/settings.html">
                                                     <span class="sidenav-mini-icon text-xs"> S </span>
                                                     <span class="sidenav-normal"> Settings </span>
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link " href="../pages/account/billing.html">
-                                                    <span class="sidenav-mini-icon text-xs"> B </span>
-                                                    <span class="sidenav-normal"> Billing </span>
                                                 </a>
                                             </li>
                                             <li class="nav-item">
@@ -315,12 +268,6 @@
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link " href="../pages/projects/timeline.html">
-                                                    <span class="sidenav-mini-icon text-xs"> T </span>
-                                                    <span class="sidenav-normal"> Timeline </span>
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
                                                 <a class="nav-link " href="../pages/projects/new-project.html">
                                                     <span class="sidenav-mini-icon text-xs"> N </span>
                                                     <span class="sidenav-normal"> New Project </span>
@@ -329,52 +276,10 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link " href="../pages/pricing-page.html">
-                                        <span class="sidenav-mini-icon"> P </span>
-                                        <span class="sidenav-normal"> Pricing Page </span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link " href="../pages/messages.html">
-                                        <span class="sidenav-mini-icon"> M </span>
-                                        <span class="sidenav-normal"> Messages </span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link " href="../pages/rtl-page.html">
-                                        <span class="sidenav-mini-icon"> R </span>
-                                        <span class="sidenav-normal"> RTL </span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link " href="../pages/widgets.html">
-                                        <span class="sidenav-mini-icon"> W </span>
-                                        <span class="sidenav-normal"> Widgets </span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link " href="../pages/charts.html">
-                                        <span class="sidenav-mini-icon"> C </span>
-                                        <span class="sidenav-normal"> Charts </span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link " href="../pages/sweet-alerts.html">
-                                        <span class="sidenav-mini-icon"> S </span>
-                                        <span class="sidenav-normal"> Sweet Alerts </span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link " href="../pages/notifications.html">
-                                        <span class="sidenav-mini-icon"> N </span>
-                                        <span class="sidenav-normal"> Notifications </span>
-                                    </a>
-                                </li>
                             </ul>
                         </div>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                         <a data-bs-toggle="collapse" href="#applicationsExamples" class="nav-link " aria-controls="applicationsExamples" role="button" aria-expanded="false">
                             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center d-flex align-items-center justify-content-center  me-2">
                                 <svg width="12px" height="12px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -428,8 +333,8 @@
                                 </li>
                             </ul>
                         </div>
-                </li>
-                <li class="nav-item">
+                </li> -->
+                <!-- <li class="nav-item">
                     <a data-bs-toggle="collapse" href="#ecommerceExamples" class="nav-link " aria-controls="ecommerceExamples" role="button" aria-expanded="false">
                         <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center d-flex align-items-center justify-content-center  me-2">
                             <svg class="text-dark" width="12px" height="12px" viewBox="0 0 42 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -520,8 +425,8 @@
                             </li>
                         </ul>
                     </div>
-                </li>
-                <li class="nav-item">
+                </li> -->
+                <!-- <li class="nav-item">
                     <a data-bs-toggle="collapse" href="#authExamples" class="nav-link " aria-controls="authExamples" role="button" aria-expanded="false">
                         <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center d-flex align-items-center justify-content-center  me-2">
                             <svg width="12px" height="12px" viewBox="0 0 40 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -706,12 +611,12 @@
                             </li>
                         </ul>
                     </div>
-                </li>
-                <li class="nav-item">
+                </li> -->
+                <!-- <li class="nav-item">
                     <hr class="horizontal dark" />
                     <h6 class="ps-4  ms-2 text-uppercase text-xs font-weight-bolder opacity-6">DOCS</h6>
-                </li>
-                <li class="nav-item">
+                </li> -->
+                <!-- <li class="nav-item">
                     <a data-bs-toggle="collapse" href="#basicExamples" class="nav-link " aria-controls="basicExamples" role="button" aria-expanded="false">
                         <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center d-flex align-items-center justify-content-center  me-2">
                             <svg width="12px" height="20px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -804,8 +709,8 @@
                             </li>
                         </ul>
                     </div>
-                </li>
-                <li class="nav-item">
+                </li> -->
+                <!-- <li class="nav-item">
                     <a data-bs-toggle="collapse" href="#componentsExamples" class="nav-link " aria-controls="componentsExamples" role="button" aria-expanded="false">
                         <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center d-flex align-items-center justify-content-center  me-2">
                             <svg width="12px" height="12px" viewBox="0 0 46 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -931,8 +836,8 @@
                             </li>
                         </ul>
                     </div>
-                </li>
-                <li class="nav-item">
+                </li> -->
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="https://github.com/creativetimofficial/ct-soft-ui-dashboard-pro/blob/main/CHANGELOG.md" target="_blank">
                         <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center  me-2 d-flex align-items-center justify-content-center">
                             <svg width="12px" height="12px" viewBox="0 0 43 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -951,10 +856,10 @@
                         </div>
                         <span class="nav-link-text ms-1">Changelog</span>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </div>
-        <div class="sidenav-footer mx-3 mt-3 pt-3">
+        <!-- <div class="sidenav-footer mx-3 mt-3 pt-3">
             <div class="card card-background shadow-none card-background-mask-secondary" id="sidenavCard">
                 <div class="full-background" style="background-image: url('../../assets/img/curved-images/white-curved.jpg')">
                 </div>
@@ -969,7 +874,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </aside>
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
         <nav class="navbar navbar-main navbar-expand-lg position-sticky mt-4 top-1 px-0 mx-4 shadow-none border-radius-xl z-index-sticky" id="navbarBlur" data-scroll="true">
