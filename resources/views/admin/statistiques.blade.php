@@ -1,138 +1,4 @@
-Passer au contenu
-WayToLearnX
-WayToLearnX
-WayToLearnX
-
-TUTORIELS
-Développement Logiciel
-Java
-PHP
-C
-C++
-C#
-Arduino
-Python
-POO
-Algorithmique
-Les bases de la programmation
-Autre
-Développement Web
-Javascript
-jQuery
-HTML / CSS
-Web service
-Autre
-Base de données
-MySQL
-PostgreSQL
-Oracle
-SQL Server
-NoSQL
-Conception BD
-Réseaux et Télécoms
-Réseau
-Télécommunications
-Sécurité réseau
-Systèmes d’exploitation
-Gestion de projet
-Cloud Computing
-Intelligence Artificielle
-DevOps
-Big Data
-SEO
-Bureautique
-Microsoft Word
-Microsoft Excel
-Microsoft PowerPoint
-Graphisme & vidéo
-ASTUCES
-Programmation / Dev
-Internet
-Windows 10
-Windows 7
-Linux
-Mac
-Mobiles
-QCM
-Langage
-Java
-Python
-PHP
-HTML / CSS
-XML
-C#
-jQuery
-Javascript
-C
-C++
-Perl
-Algorithmiques
-Framework
-Symfony
-Laravel
-AngularJS
-NodeJS
-ReactJS
-Spring
-ASP.Net
-Apache Spark
-New Tech
-Big Data
-DevOps
-Cloud Computing
-Machine Learning
-Intelligence Artificielle
-Gestion de projet
-CMS
-WordPress
-Joomla
-Magento
-Drupal
-Système d’exploitation
-Linux
-Windows
-Android
-GIT
-Docker
-Base de données
-MySQL
-Oracle
-MongoDB
-Informatique générale
-Bureautique
-Word
-Excel
-PowerPoint
-Access
-Réseau informatique
-Securité
-Architecture des ordinateurs
-DÉFI / EXERCICES
-Java
-PHP
-JavaScript
-Python
-C
-C++
-C#
-Swift
-Ruby
-FORUM
-JOBS
-CONNEXION
-INSCRIPTION
-Indenter automatiquement du code HTML
-Outil en ligne gratuit pour formater votre code HTML, le rendant lisible et joli, avec une indentation appropriée.
-
-Entrez le code HTML puis cliquez sur le bouton Formater ci-dessous:
- 
-<!DOCTYPE html>
-<html lang="en">
-<!-- Mirrored from demos.creative-tim.com/soft-ui-dashboard-pro/pages/dashboards/default.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 04 Aug 2023 06:26:55 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-<!-- /Added by HTTrack -->
-<head>
+<!-- <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
@@ -220,13 +86,13 @@ Entrez le code HTML puis cliquez sur le bouton Formater ci-dessous:
     })(window, document, 'script', 'dataLayer', 'GTM-NKDMSK6');
   </script>
   <script defer data-site="demos.creative-tim.com" src="../../../../api.nepcha.com/js/nepcha-analytics.js"></script>
-</head>
+</head> -->
 <body class="g-sidenav-show  bg-gray-100">
-  <noscript>
+  <!-- <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6" height="0" width="0" style="display:none;visibility:hidden">
     </iframe>
-  </noscript>
-  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 " id="sidenav-main">
+  </noscript> -->
+  <!-- <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 " id="sidenav-main">
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
       <a class="navbar-brand m-0" href="default.html" target="_blank">
@@ -1134,7 +1000,7 @@ Entrez le code HTML puis cliquez sur le bouton Formater ci-dessous:
         </div>
       </div>
     </div>
-  </aside>
+  </aside> -->
   <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
     <nav class="navbar navbar-main navbar-expand-lg position-sticky mt-4 top-1 px-0 mx-4 shadow-none border-radius-xl z-index-sticky" id="navbarBlur" data-scroll="true">
       <div class="container-fluid py-1 px-3">
@@ -1175,7 +1041,7 @@ Entrez le code HTML puis cliquez sur le bouton Formater ci-dessous:
             </div>
           </a>
         </div>
-        <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+        <!-- <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
             <div class="input-group">
               <span class="input-group-text text-body">
@@ -1271,7 +1137,7 @@ Entrez le code HTML puis cliquez sur le bouton Formater ci-dessous:
               </ul>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </nav>
     <div class="container-fluid py-4">
