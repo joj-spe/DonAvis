@@ -9,6 +9,6 @@ class UsersController extends Controller
     //
     function index()
     {
-        return view ('dashboard');
+        return view ('template');
     }
 }
