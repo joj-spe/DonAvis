@@ -9,7 +9,7 @@
 	<meta name="author" content="">
 
 	<link href="images/header/fav.png" rel="shortcut icon" type="image/x-icon" />
-	<title> @yied('title') </title>
+	<title> @yield('title') </title>
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
@@ -88,7 +88,7 @@
 	<script src="js/menurght.js"></script>
 	<script src="js/crausal1.js"></script>
 
-	<script src="js/slick.min.js"></script>
+	<script src="{{asset('js/slick.min.js')}}"></script>
 
 	<script src="assets/vendors/jquery.min.js"></script>
 	<script src="assets/owlcarousel/owl.carousel.js"></script>
