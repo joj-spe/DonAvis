@@ -22,24 +22,42 @@ Route::get('/welcome', function () {
 
 
 //Travailler ici , ça veut dire qu'on doit acceder à ces paes si et seulement si on se connecte
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth' ,'verified'])->group(function () {
 
-    Route::get('/', function () {  return view('welcome');  })
-    ->name('home');
+    Route::get('/home', function () {
+        if(Auth::user()->role == 1){  return redirect()->route('admin.home'); }
+        if(Auth::user()->role == 2){  return redirect()->route('user.home'); }
+        if(Auth::user()->role == 3){  return redirect()->route('organisation.home'); }
+    })->name('home');
 
-    /*Route::prefix('admin')->group(function () {
-    });*/
+    //Pour les liens de l'admin
+    Route::prefix('admin')->group(function () {
+
+        Route::get('/home', function () {
+            return view('admin.dashboard');
+        })->name('admin.home');
+
+    });
+
+    //Pour les liens de l'ornaisation
+    Route::prefix('organisation')->group(function () {
+
+        Route::get('/home', function () {
+            return view('admin.dashboard');
+        })->name('organisation.home');
+
+    });
+
+    //Pour les liens des utilisateurs
+    Route::prefix('users')->group(function () {
+
+        Route::get('/home', function () {
+            return view('admin.dashboard');
+        })->name('user.home');
+
+    });
 
 });
 
-Route::get('/home', function () {
-    return view('includes.menu');
-})->middleware(['auth', 'verified']);
 
-Route::get('/organisateur', function () {
-    return view('starter');
-})->name('starter');
 
-Route::get('/profilOrganisateur', function () {
-    return view('orgView.profilOrganisateur');
-})->name('profilOrganisateur');
