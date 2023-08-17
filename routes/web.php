@@ -27,7 +27,7 @@ Route::middleware(['auth' ,'verified'])->group(function () {
     Route::get('/home', function () {
         if(Auth::user()->role == 1){  return redirect()->route('admin.home'); }
         if(Auth::user()->role == 2){  return redirect()->route('user.home'); }
-        if(Auth::user()->role == 3){  return redirect()->route('organisation.home'); }
+        if(Auth::user()->role == 3){  return redirect()->route('organisateur.home'); }
     })->name('home');
 
     //Pour les liens de l'admin
@@ -39,12 +39,16 @@ Route::middleware(['auth' ,'verified'])->group(function () {
 
     });
 
-    //Pour les liens de l'ornaisation
-    Route::prefix('organisation')->group(function () {
+    //Pour les liens de l'organisation
+    Route::prefix('organisateur')->group(function () {
 
         Route::get('/home', function () {
-            return view('admin.dashboard');
-        })->name('organisation.home');
+            return view('starter');
+        })->name('organisateur.home');
+
+        Route::get('/profilOrg', function () {
+            return view('orgView.profilOrganisateur');
+        })->name('profilOrganisateur');
 
     });
 
@@ -52,7 +56,7 @@ Route::middleware(['auth' ,'verified'])->group(function () {
     Route::prefix('users')->group(function () {
 
         Route::get('/home', function () {
-            return view('admin.dashboard');
+            return view('starter');
         })->name('user.home');
 
     });

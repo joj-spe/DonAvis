@@ -1,5 +1,5 @@
 @extends('layout.template')
-@section('title', "Profil utilisateur")
+@section('title', "Profile Organisateur")
 
 @section('contenu')
 <div class="card card-body" id="profile">

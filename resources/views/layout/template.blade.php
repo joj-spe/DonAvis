@@ -77,23 +77,23 @@
 		<i class="ti-arrow-up"></i>
 	</a>
 
-	<script src="js/jquery.min.js"></script>
-	<script src="vendor_asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="{{asset('js/jquery.min.js')}}"></script>
+	<script src="{{asset('vendor_asset/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
-	<script src="vendor_asset/jquery-easing/jquery.easing.min.js"></script>
+	<script src="{{asset('vendor_asset/jquery-easing/jquery.easing.min.js')}}"></script>
 
-	<script src="js/sb-admin.min.js"></script>
-	<script src="js/portfolio.js"></script>
-	<script src="js/you-listing.js"></script>
-	<script src="js/menurght.js"></script>
-	<script src="js/crausal1.js"></script>
+	<script src="{{asset('js/sb-admin.min.js')}}"></script>
+	<script src="{{asset('js/portfolio.js')}}"></script>
+	<script src="{{asset('js/you-listing.js')}}"></script>
+	<script src="{{asset('js/menurght.js')}}"></script>
+	<script src="{{asset('js/crausal1.js')}}"></script>
 
 	<script src="{{asset('js/slick.min.js')}}"></script>
 
-	<script src="assets/vendors/jquery.min.js"></script>
-	<script src="assets/owlcarousel/owl.carousel.js"></script>
-	<script src="assets/vendors/highlight.js"></script>
-	<script src="assets/js/app.js"></script>
+	<script src="{{asset('assets/vendors/jquery.min.js')}}"></script>
+	<script src="{{asset('assets/owlcarousel/owl.carousel.js')}}"></script>
+	<script src="{{asset('assets/vendors/highlight.js')}}"></script>
+	<script src="{{asset('assets/js/app.js')}}"></script>
 	<script>
 		window.oncontextmenu = function () {
 			return false;
