@@ -30,6 +30,7 @@ class CreateNewUser implements CreatesNewUsers
                 Rule::unique(User::class),
             ],
             'password' => $this->passwordRules(),
+            'role'=>['required', 'numeric', 'min:1']
         ])->validate();
 
         return User::create([
@@ -37,6 +38,7 @@ class CreateNewUser implements CreatesNewUsers
             'prenom_user' => $input['prenom_user'],
             'email' => $input['email'],
             'password' => Hash::make($input['password']),
+            'role'=> $input['role'],
         ]);
     }
 }

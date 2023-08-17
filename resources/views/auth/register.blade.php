@@ -51,6 +51,16 @@
                                         <form class="sinup" method="POST" action="{{ route('register') }}">
                                             @csrf
                                             <div class="input-container">
+                                                <select class="form-control"  name="role" id="" required >
+                                                    <option value="">Qui etes vous ?</option>
+                                                    <option value="2">Je suis un utilisateur</option>
+                                                    <option value="3">Je suis un organisateur</option>
+                                                </select>
+                                                @error('role')
+                                                    <span class="text-danger">Préciser votre role</span>
+                                                @enderror
+                                            </div>
+                                            <div class="input-container">
                                                 <input id="name" class="input-field" type="text" name="name" value="{{ old('name') }}" required autocomplete="name" placeholder="Nom"  required autocomplete="name" autofocus>
                                                 @error('name')
                                                     <span class="invalid-feedback" role="alert">

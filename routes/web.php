@@ -16,8 +16,8 @@ use Illuminate\Support\Facades\Auth;
 */
 
 
-Route::get('/welcome', function () {
-    return view('welcome');
+Route::get('/', function () {
+    return redirect()->route('home');
 })->name('welcome');
 
 
@@ -36,6 +36,12 @@ Route::middleware(['auth' ,'verified'])->group(function () {
         Route::get('/home', function () {
             return view('admin.dashboard');
         })->name('admin.home');
+
+        Route::get('list-user', function ($id) {
+
+        })->name('admin.user_list');
+
+        Route::get('list-oran', [COntrol::class , 'funciont'])->name('admin.organisateut_list');
 
     });
 
@@ -62,6 +68,7 @@ Route::middleware(['auth' ,'verified'])->group(function () {
     });
 
 });
+
 
 
 

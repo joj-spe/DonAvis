@@ -11,23 +11,23 @@
 	<link href="images/header/fav.png" rel="shortcut icon" type="image/x-icon" />
 	<title> @yield('title') </title>
 
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link href="css/responsive.css" rel="stylesheet">
-	<link href="css/svg.css" rel="stylesheet">
+	<link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
+	<link href="{{asset('css/style.css')}}" rel="stylesheet">
+	<link href="{{asset('css/responsive.css')}}" rel="stylesheet">
+	<link href="{{asset('css/svg.css')}}" rel="stylesheet">
 
-	<link href="css/themify-icons.css" rel="stylesheet">
+	<link href="{{asset('css/themify-icons.css')}}" rel="stylesheet">
 	<link rel="stylesheet" href="../../../../use.fontawesome.com/releases/v5.8.1/css/all.css"
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="css/portfolio.css" type="text/css">
-	<link rel="stylesheet" href="css/owlslider.css" type="text/css">
+	<link rel="stylesheet" href="{{asset('css/portfolio.css')}}" type="text/css">
+	<link rel="stylesheet" href="{{asset('css/owlslider.css')}}" type="text/css">
 
-	<link href="css/sb-admin.css" rel="stylesheet" type="text/css">
-	<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
-	<link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+	<link href="{{asset('css/sb-admin.css')}}" rel="stylesheet" type="text/css">
+	<link href="{{asset('css/font-awesome.css')}}" rel="stylesheet" type="text/css">
+	<link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="{{asset('assets/owlcarousel/assets/owl.carousel.min.css')}}">
+	<link rel="stylesheet" href="{{asset('assets/owlcarousel/assets/owl.theme.default.min.css')}}">
 </head>
 
 <body id="page-top">
