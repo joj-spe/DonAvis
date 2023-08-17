@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsersController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +17,7 @@ use App\Http\Controllers\UsersController;
 
 
 Route::get('/welcome', function () {
-    return view('welcome');
+    return view('userView.welcome');
 })->name('welcome');
 
 
@@ -27,8 +28,10 @@ Route::middleware(['auth'])->group(function () {
     ->name('home');
 
     /*Route::prefix('admin')->group(function () {
-
     });*/
 
 });
 
+Route::get('/home', function () {
+    return view('includes.menu');
+})->middleware(['auth', 'verified']);

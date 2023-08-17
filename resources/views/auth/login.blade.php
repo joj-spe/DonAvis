@@ -36,18 +36,24 @@
                                 <a href="index_1.html"><img src="images/header/logo.svg" alt=""></a>
                             </div>
                             <div class="sings col-md-6 col-sm-12">
-                                <a href="signup.html">Sign up now</a>
+                                <a href="{{ route('register') }}">Créer un compte</a>
                             </div>
                             <div class="clearfix">
                             </div>
                             <div class="sform">
-                                <h1>Sign in</h1>
-                                <span>Hello there! Sign in and start managing your item.</span>
+                                <h1>Connexion</h1>
+                                <span>Bienvenue! Veuillez vous connecter</span>
                                 <div class="row justify-content-md-center">
                                     <div class="col-lg-4 col-sm-12">
-                                        <form class="sinup" action="#">
+                                        <form method="POST" action="{{ route('login') }}">
+                                        @csrf
                                             <div class="input-container">
-                                                <input class="input-field" type="text" placeholder="Email" name="email">
+                                                <input id="email" class="input-field" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="Email"autofocus>
+                                                @error('email')
+                                                        <span class="invalid-feedback" role="alert">
+                                                            <strong>{{ $message }}</strong>
+                                                        </span>
+                                                @enderror
                                                 <svg xmlns="http://www.w3.org/2000/svg"
                                                     xmlns:xlink="http://www.w3.org/1999/xlink"
                                                     preserveAspectRatio="xMidYMid" width="14" height="12"
@@ -58,8 +64,12 @@
                                                 </svg>
                                             </div>
                                             <div class="input-container">
-                                                <input class="input-field" type="password" placeholder="Password"
-                                                    name="psw">
+                                                <input class="input-field" type="password" name="password" required autocomplete="current-password" placeholder="Mot de passe">
+                                                @error('password')
+                                                    <span class="invalid-feedback" role="alert">
+                                                        <strong>{{ $message }}</strong>
+                                                    </span>
+                                                @enderror
                                                 <svg xmlns="http://www.w3.org/2000/svg"
                                                     xmlns:xlink="http://www.w3.org/1999/xlink"
                                                     preserveAspectRatio="xMidYMid" width="14" height="13"
@@ -69,11 +79,13 @@
                                                     </path>
                                                 </svg>
                                             </div>
-                                            <button type="submit" class="btn">Sign in</button>
+                                            <button type="submit" class="btn">Se connecter</button>
                                             <div class="forgets">
-                                                <a href="#">
-                                                    Forgot password?
-                                                </a>
+                                                @if (Route::has('password.request'))
+                                                    <a href="{{ route('password.request') }}">
+                                                        Mot de passe oublié?
+                                                    </a>
+                                                @endif
                                             </div>
                                         </form>
                                     </div>
@@ -105,8 +117,8 @@
         </div>
     </div>
 
-    <script src="vendor_asset/jquery/jquery.min.js"></script>
-    <script src="vendor_asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{asset('vendor_asset/js/jquery.min.js')}}"></script>
+    <script src="{{asset('vendor_asset/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
     <script>
         window.oncontextmenu = function () {
