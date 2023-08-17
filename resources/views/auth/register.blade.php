@@ -11,7 +11,7 @@
     <meta name="author" content="">
 
     <link href="images/header/fav.png" rel="shortcut icon" type="image/x-icon" />
-    <title>Youlisting | Sign Up </title>
+    <title>DonAvis | Connexion </title>
 
     <link href="vendor_asset/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">

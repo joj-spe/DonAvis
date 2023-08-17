@@ -4,7 +4,7 @@
 
 <!-- Mirrored from lite.codedthemes.com/datta-able/bootstrap/auth-signin.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 Jul 2023 09:42:09 GMT -->
 <head>
-    <title>Datta Able Free Bootstrap 4 Admin Template</title>
+    <title>DonAvis Register</title>
     <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 10]>

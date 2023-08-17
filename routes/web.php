@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Auth;
 
 
 Route::get('/welcome', function () {
-    return view('userView.welcome');
+    return view('welcome');
 })->name('welcome');
 
 
@@ -35,3 +35,11 @@ Route::middleware(['auth'])->group(function () {
 Route::get('/home', function () {
     return view('includes.menu');
 })->middleware(['auth', 'verified']);
+
+Route::get('/organisateur', function () {
+    return view('starter');
+})->name('starter');
+
+Route::get('/profilOrganisateur', function () {
+    return view('orgView.profilOrganisateur');
+})->name('profilOrganisateur');
