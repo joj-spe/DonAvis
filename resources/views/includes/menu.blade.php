@@ -1,4 +1,3 @@
-
 @if(Auth::user()->role == 1 )
     @include('includes.menu_admin')
 @endif
@@ -12,7 +11,7 @@
     @include('includes.menu_organ')
 @endif
 
-<li class="nav-item">
+<!--li class="nav-item">
     <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             preserveAspectRatio="xMidYMid" width="16" height="13" class="left-icons" viewBox="0 0 16 13">
@@ -25,4 +24,15 @@
     <form id="logout-form" action="{{ route('logout') }}" method="POST">
         @csrf
     </form>
+</li-->
+
+<li class="nav-main-item">
+    <a class="nav-main-link"  href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" >
+        <i class="nav-main-link-icon si si-speedometer"></i>
+        <span class="nav-main-link-name">Se Deconnecter</span>
+    </a>
+    <form id="logout-form" action="{{ route('logout') }}" method="POST">
+        @csrf
+    </form>
 </li>
+

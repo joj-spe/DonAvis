@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Auth;
-
+use App\Providers\FortifyServiceProvider;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,7 +21,7 @@ Route::get('/', function () {
 })->name('welcome');
 
 
-//Travailler ici , ça veut dire qu'on doit acceder à ces paes si et seulement si on se connecte
+//Travailler ici , ça veut dire qu'on doit acceder à ces pages si et seulement si on se connecte
 Route::middleware(['auth' ,'verified'])->group(function () {
 
     Route::get('/home', function () {
@@ -37,11 +37,13 @@ Route::middleware(['auth' ,'verified'])->group(function () {
             return view('admin.dashboard');
         })->name('admin.home');
 
-        Route::get('list-user', function ($id) {
-
+        Route::get('list-user', function () {
+            return view('admin.dashboard');
         })->name('admin.user_list');
 
-        Route::get('list-oran', [COntrol::class , 'funciont'])->name('admin.organisateut_list');
+        Route::get('list-organ',function () {
+            return view('admin.dashboard');
+        })->name('admin.organisateur_list');
 
     });
 
@@ -69,6 +71,4 @@ Route::middleware(['auth' ,'verified'])->group(function () {
 
 });
 
-
-
-
+Route::post('/logout', [FortifyServiceProvider::class, 'logout'])->name('logout');
