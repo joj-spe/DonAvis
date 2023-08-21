@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Auth;
-
+use App\Providers\FortifyServiceProvider;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,11 +37,13 @@ Route::middleware(['auth' ,'verified'])->group(function () {
             return view('admin.dashboard');
         })->name('admin.home');
 
-        Route::get('list-user', function ($id) {
-
+        Route::get('list-user', function () {
+            return view('admin.dashboard');
         })->name('admin.user_list');
 
-        Route::get('list-organ', [COntrol::class , 'function'])->name('admin.organisateur_list');
+        Route::get('list-organ',function () {
+            return view('admin.dashboard');
+        })->name('admin.organisateur_list');
 
     });
 
