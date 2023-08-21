@@ -21,7 +21,7 @@ Route::get('/', function () {
 })->name('welcome');
 
 
-//Travailler ici , ça veut dire qu'on doit acceder à ces paes si et seulement si on se connecte
+//Travailler ici , ça veut dire qu'on doit acceder à ces pages si et seulement si on se connecte
 Route::middleware(['auth' ,'verified'])->group(function () {
 
     Route::get('/home', function () {
@@ -41,7 +41,7 @@ Route::middleware(['auth' ,'verified'])->group(function () {
 
         })->name('admin.user_list');
 
-        Route::get('list-oran', [COntrol::class , 'funciont'])->name('admin.organisateut_list');
+        Route::get('list-organ', [COntrol::class , 'function'])->name('admin.organisateur_list');
 
     });
 
@@ -69,6 +69,4 @@ Route::middleware(['auth' ,'verified'])->group(function () {
 
 });
 
-
-
-
+Route::post('/logout', [FortifyServiceProvider::class, 'logout'])->name('logout');

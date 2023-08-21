@@ -1,4 +1,3 @@
-
 @if(Auth::user()->role == 1 )
     @include('includes.menu_admin')
 @endif

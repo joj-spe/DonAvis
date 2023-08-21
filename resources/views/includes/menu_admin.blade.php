@@ -11,7 +11,7 @@
 </li>
 
 <li class="nav-item">
-    <a href="">
+    <a href="{{ route('user_list') }}">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             preserveAspectRatio="xMidYMid" width="16" height="13" class="left-icons" viewBox="0 0 16 13">
             <path
@@ -22,7 +22,7 @@
     </a>
 </li>
 <li class="nav-item">
-    <a href="">
+    <a href="{{ route('organisateur_list') }}">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             preserveAspectRatio="xMidYMid" width="16" height="13" class="left-icons" viewBox="0 0 16 13">
             <path
